@@ -4,130 +4,110 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>プライバシーポリシー - 100pt Fighters</title>
-  <meta name="description" content="100pt Fighters のプライバシーポリシーです。広告（AdMob）の利用、データの取り扱い、問い合わせ先などを記載しています。">
+  <meta name="description" content="100pt Fighters のプライバシーポリシー。AdMob の利用、収集データ、第三者への提供、オプトアウト、問い合わせ窓口など。">
   <meta property="og:title" content="プライバシーポリシー - 100pt Fighters">
-  <meta property="og:description" content="広告（AdMob）の利用、データの取り扱い、問い合わせ先などを記載しています。">
+  <meta property="og:description" content="AdMob の利用、収集データ、第三者への提供、オプトアウト、問い合わせ窓口など。">
   <meta property="og:type" content="website">
   <meta name="theme-color" content="#ff7fbf">
 
   <style>
     :root{
-      --bg:#fff5fa;
-      --panel:#ffffff;
-      --ink:#553348;
-      --ink-soft:#7a4e67;
-      --accent:#ff7fbf;
-      --accent-2:#ffd2e9;
-      --chip:#ffe6f3;
-      --ok:#21b373;
-      --warn:#ffb022;
-      --radius:18px;
-      --shadow:0 10px 24px rgba(255, 127, 191, .18);
+      --bg:#fff5fa; --panel:#ffffff; --ink:#553348; --ink-soft:#7a4e67;
+      --accent:#ff7fbf; --accent-2:#ffd2e9; --chip:#ffe6f3;
+      --ok:#21b373; --warn:#ffb022; --radius:18px;
+      --shadow:0 10px 24px rgba(255,127,191,.18);
+      --muted:#7b7b7b;
+      --ring:#ffe1f2;
     }
     *{box-sizing:border-box}
     html,body{margin:0}
     body{
       font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Noto Sans JP", Arial, sans-serif;
       color:var(--ink);
-      background: radial-gradient(1200px 600px at 10% -10%, #ffe0f1, transparent 60%),
-                 radial-gradient(1000px 500px at 110% 0%, #ffeef7, transparent 50%),
-                 var(--bg);
+      background:
+        radial-gradient(1200px 600px at 10% -10%, #ffe0f1, transparent 60%),
+        radial-gradient(1000px 500px at 110% 0%, #ffeef7, transparent 50%),
+        var(--bg);
       line-height:1.7;
     }
     .wrap{max-width:980px;margin:32px auto;padding:0 20px 48px}
-    header{
-      position:relative;
-      padding:32px 20px 40px;
-      text-align:center;
-    }
+    header{text-align:center;padding:28px 0 32px}
     .logo{
-      display:inline-flex; align-items:center; gap:10px;
-      padding:10px 16px; border-radius:999px;
+      display:inline-flex;align-items:center;gap:10px;
+      padding:10px 16px;border-radius:999px;
       background:linear-gradient(180deg,var(--panel),#fff8fc);
+      border:1px solid var(--ring);
       box-shadow:var(--shadow);
-      border:1px solid #ffe1f2;
     }
     .spark{width:28px;height:28px;border-radius:50%;
       background: radial-gradient(circle at 35% 35%, #fff 0 35%, #ffd2e9 36% 100%);
       box-shadow:0 0 0 6px #fff, 0 6px 20px rgba(255,127,191,.35);
     }
-    h1{
-      font-size:clamp(26px,4vw,36px);
-      margin:18px 0 0;
-      letter-spacing:.02em;
-      text-shadow:0 2px 0 #fff;
-    }
-    .subtitle{
-      color:var(--ink-soft);
-      margin-top:8px;
-      font-size:clamp(14px,2.2vw,16px);
-    }
-    .chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:18px 0 0}
-    .chip{
-      padding:6px 12px;border-radius:999px;background:var(--chip);
-      border:1px solid #ffd7ec;font-size:13px
-    }
+    h1{font-size:clamp(26px,4vw,36px);margin:16px 0 6px;letter-spacing:.02em;text-shadow:0 2px 0 #fff}
+    .subtitle{color:var(--ink-soft);font-size:clamp(14px,2.2vw,16px);margin:0}
+    .chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:14px 0 0}
+    .chip{padding:6px 12px;border-radius:999px;background:var(--chip);border:1px solid #ffd7ec;font-size:13px}
 
-    nav{
-      position:sticky; top:0; z-index:10;
-      backdrop-filter:saturate(180%) blur(10px);
-      background:linear-gradient(180deg, rgba(255,255,255,.85), rgba(255,255,255,.65));
-      border-bottom:1px solid #ffe1f2;
-    }
+    nav{position:sticky;top:0;z-index:10;backdrop-filter:saturate(180%) blur(10px);
+      background:linear-gradient(180deg, rgba(255,255,255,.9), rgba(255,255,255,.7));
+      border-bottom:1px solid var(--ring)}
     .nav-inner{max-width:980px;margin:0 auto;padding:10px 20px;display:flex;gap:12px;overflow:auto}
-    .nav-inner a{
-      white-space:nowrap;text-decoration:none;color:var(--ink);
-      background:#fff;border:1px solid #ffd7ec;border-radius:999px;padding:8px 14px;font-size:13px
-    }
+    .nav-inner a{white-space:nowrap;text-decoration:none;color:var(--ink);
+      background:#fff;border:1px solid #ffd7ec;border-radius:999px;padding:8px 14px;font-size:13px}
     .nav-inner a:hover{background:var(--accent-2)}
-    main{margin-top:22px}
 
-    .card{
-      background:var(--panel);
-      border:1px solid #ffe1f2; border-radius:var(--radius);
-      box-shadow:var(--shadow);
-      padding:22px; margin:14px 0;
-    }
+    main{margin-top:22px}
+    .card{background:var(--panel);border:1px solid var(--ring);border-radius:var(--radius);
+      box-shadow:var(--shadow);padding:22px;margin:14px 0}
     .card h2{margin:0 0 10px;font-size:22px}
     .card h3{margin:18px 0 8px;font-size:17px}
-    .badge{display:inline-block;padding:3px 10px;border-radius:999px;background:var(--accent-2);font-size:12px;border:1px solid #ffc7e5}
+    .badge{display:inline-block;padding:3px 10px;border-radius:999px;background:var(--accent-2);
+      font-size:12px;border:1px solid #ffc7e5}
     ul{padding-left:20px;margin:8px 0}
     a{color:#e14f9e}
     .ok{color:var(--ok)} .warn{color:var(--warn)}
-    .footer{
-      text-align:center;color:var(--ink-soft);font-size:12px;margin-top:22px
-    }
-
-    /* cute divider */
     .divider{height:12px;margin:24px 0;background:
       radial-gradient(8px 8px at 8px 6px, var(--accent) 40%, transparent 41%) repeat-x left center/28px 12px}
+
+    /* お問い合わせフォーム枠 */
+    .form-wrap iframe{
+      width:100%; height:1100px; border:0; border-radius:12px;
+      box-shadow:0 6px 20px rgba(0,0,0,.03); background:#fff;
+    }
+
+    /* フッター */
+    footer{text-align:center;color:var(--muted);font-size:12px;margin-top:22px}
+    .links{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+    .pill{display:inline-block;padding:7px 12px;border-radius:999px;background:#fff;border:1px solid #eee;text-decoration:none;color:var(--ink)}
+    .pill:hover{background:#faf7fb}
   </style>
 </head>
 <body>
-  <div class="wrap">
+  <div class="wrap" id="top">
     <header>
-      <div class="logo"><span class="spark"></span><strong>100pt Fighters</strong> 公式ポリシー</div>
+      <div class="logo"><span class="spark" aria-hidden="true"></span><strong>100pt Fighters</strong> 公式ポリシー</div>
       <h1>プライバシーポリシー</h1>
-      <p class="subtitle">ユーザーのみなさまに安心して遊んでいただくため、データの取り扱いをわかりやすくまとめました。</p>
+      <p class="subtitle">安心して遊んでもらうために、データの取り扱いをわかりやすくまとめました。</p>
       <div class="chips">
         <span class="chip">AdMob 対応</span>
-        <span class="chip">オプトアウト案内</span>
+        <span class="chip">フォーム問い合わせ対応</span>
         <span class="chip">最終更新：2025-08-24</span>
       </div>
     </header>
 
     <nav>
       <div class="nav-inner">
-        <a href="#about">1. 本ポリシーについて</a>
-        <a href="#collect">2. 収集する情報</a>
+        <a href="#about">1. 本ポリシー</a>
+        <a href="#collect">2. 収集情報</a>
         <a href="#purpose">3. 利用目的</a>
         <a href="#ads">4. 広告（AdMob）</a>
         <a href="#optout">5. オプトアウト</a>
-        <a href="#children">6. 児童の利用</a>
+        <a href="#children">6. 児童</a>
         <a href="#share">7. 第三者提供</a>
-        <a href="#secure">8. セキュリティ</a>
-        <a href="#changes">9. 変更</a>
-        <a href="#contact">10. お問い合わせ</a>
+        <a href="#security">8. セキュリティ</a>
+        <a href="#retention">9. 保持期間</a>
+        <a href="#changes">10. 変更</a>
+        <a href="#contact">11. お問い合わせ</a>
       </div>
     </nav>
 
@@ -143,72 +123,120 @@
         <h2>2. 収集する情報 <span class="badge">What we collect</span></h2>
         <h3>自動的に収集される可能性がある情報</h3>
         <ul>
-          <li>広告ID（IDFA/AAID など）</li>
-          <li>端末情報（機種名、OS バージョン、言語、国/地域）</li>
-          <li>アプリの利用状況（起動回数、閲覧画面、クラッシュログ等の技術ログ）</li>
+          <li>広告ID（IDFA など）</li>
+          <li>端末情報（機種、OS、言語、国/地域）</li>
+          <li>利用状況（起動回数、画面遷移、クラッシュログ等の技術ログ）</li>
         </ul>
-        <p>※本アプリは、ユーザーが明示的に入力しない限り、氏名・メールアドレス等の<strong>個人を特定できる情報を自動収集しません</strong>。</p>
+        <p>※ ユーザーが明示的に入力しない限り、氏名・メールアドレス等の<strong>個人を特定できる情報を自動収集しません</strong>。</p>
+
+        <h3>ユーザーが送信する情報（お問い合わせフォーム）</h3>
+        <ul>
+          <li>メールアドレス（任意）</li>
+          <li>お問い合わせ内容</li>
+        </ul>
+        <p>これらはサポート対応のためにのみ利用し、必要な期間を超えて保持しません。</p>
       </section>
 
       <section id="purpose" class="card">
-        <h2>3. 利用目的 <span class="badge">Purposes</span></h2>
+        <h2>3. 情報の利用目的 <span class="badge">Purposes</span></h2>
         <ul>
-          <li>アプリの提供・維持・改善</li>
-          <li>不具合の調査・対策、品質向上</li>
-          <li>広告の表示および表示回数の管理</li>
+          <li>本アプリの提供・維持・改善</li>
+          <li>不具合調査・品質向上</li>
+          <li>広告表示および不正対策</li>
+          <li>お問い合わせへの回答および対応記録</li>
         </ul>
       </section>
 
       <section id="ads" class="card">
         <h2>4. 広告（Google AdMob） <span class="badge">Ads</span></h2>
-        <p>本アプリは広告配信のために <strong>Google AdMob</strong> を使用します。AdMob は広告配信・不正防止の目的で、広告ID等を利用します。詳細は下記をご確認ください。</p>
+        <p>本アプリは広告配信のために <strong>Google AdMob</strong> を利用します。AdMob は広告配信や不正防止の目的で広告ID等を利用します。詳細は以下をご確認ください。</p>
         <ul>
           <li><a href="https://policies.google.com/privacy?hl=ja" target="_blank" rel="noopener">Google プライバシーポリシー</a></li>
           <li><a href="https://policies.google.com/technologies/ads?hl=ja" target="_blank" rel="noopener">Google の広告に関するポリシー</a></li>
         </ul>
-        <p class="ok">当アプリは AdMob 以外の第三者SDKを現時点で使用していません。</p>
+        <p class="ok">現時点で、AdMob 以外の第三者 SDK は使用していません。</p>
       </section>
 
       <section id="optout" class="card">
         <h2>5. オプトアウト・選択肢 <span class="badge">Choices</span></h2>
         <ul>
-          <li>端末の設定で広告のトラッキング制限（iOS：<em>設定 &gt; プライバシー &gt; 追跡</em>）</li>
-          <li>Google の広告設定ページ：<a href="https://adssettings.google.com/authenticated" target="_blank" rel="noopener">adssettings.google.com</a></li>
+          <li>iOS：<em>設定 &gt; プライバシーとセキュリティ &gt; 追跡</em> からトラッキングを制限</li>
+          <li>Google の広告設定：<a href="https://adssettings.google.com/authenticated" target="_blank" rel="noopener">adssettings.google.com</a></li>
         </ul>
-        <p class="warn">トラッキングを制限すると、一部の機能（リワード広告の提供など）が正しく動作しない場合があります。</p>
+        <p class="warn">トラッキングを制限すると、リワード広告など一部機能が正しく動作しない場合があります。</p>
       </section>
 
       <section id="children" class="card">
         <h2>6. 児童の利用について <span class="badge">Children</span></h2>
-        <p>本アプリは13歳未満のお子さまを主な対象とはしていません。児童から得られた可能性のある情報を把握した場合、速やかに削除等の対応を行います。</p>
+        <p>本アプリは13歳未満を主な対象としていません。児童から得られた可能性のある情報を把握した場合、速やかに削除等の対応を行います。</p>
       </section>
 
       <section id="share" class="card">
         <h2>7. 第三者への提供 <span class="badge">Sharing</span></h2>
-        <p>法令に基づく場合を除き、ユーザーの情報を不当に第三者へ提供することはありません。広告配信に必要な範囲で AdMob へ情報が送信されることがあります。</p>
+        <p>法令に基づく場合を除き、ユーザー情報を不当に第三者へ提供しません。広告配信に必要な範囲で AdMob へ情報が送信されることがあります。</p>
       </section>
 
-      <section id="secure" class="card">
-        <h2>8. セキュリティ <span class="badge">Security</span></h2>
+      <section id="security" class="card">
+        <h2>8. セキュリティ対策 <span class="badge">Security</span></h2>
         <p>不正アクセス・紛失・漏えい等の防止のため、合理的な安全対策を講じます。ただし、インターネット上の通信・保管の完全性を保証するものではありません。</p>
       </section>
 
+      <section id="retention" class="card">
+        <h2>9. 情報の保持期間 <span class="badge">Retention</span></h2>
+        <p>利用目的の達成に必要な期間、または法令に基づく期間を超えて個人データを保持しません。</p>
+      </section>
+
       <section id="changes" class="card">
-        <h2>9. ポリシーの変更 <span class="badge">Changes</span></h2>
-        <p>法令やサービス内容の変更に応じて、本ポリシーを改定することがあります。重要な変更がある場合は本ページで周知します。</p>
+        <h2>10. ポリシーの変更 <span class="badge">Changes</span></h2>
+        <p>法令やサービス内容の変更に応じて本ポリシーを改定することがあります。重要な変更がある場合は本ページで周知します。</p>
       </section>
 
-      <section id="contact" class="card">
-        <h2>10. お問い合わせ <span class="badge">Contact</span></h2>
-        <p>ポリシーに関するお問い合わせは、以下の連絡先までお願いします。</p>
-        <ul>
-          <li>メール：<a href="mailto:your-email@example.com">your-email@example.com</a></li>
-        </ul>
-        <p style="font-size:12px;color:var(--ink-soft)">※ 上記メールをあなたのサポート用アドレスに変更してください。</p>
+      <!-- ====== Contact (Google Form) ====== -->
+      <section id="contact" class="card form-wrap">
+        <h2>11. お問い合わせ <span class="badge">Contact</span></h2>
+        <p>サポート・不具合報告に加え、<strong>プライバシー関連（データ削除・開示 等）</strong>のご依頼も以下のフォームで受け付けています。</p>
+
+        <!-- ★ あなたのフォームを埋め込み（ログイン不要に設定推奨）★ -->
+        <iframe
+          title="100pt Fighters お問い合わせフォーム"
+          src="https://docs.google.com/forms/d/e/1FAIpQLSeJVahgeDf8dIaJFEEH8w2ZCM4H_mgCAjnRf1L-LCMN12Y46g/viewform?embedded=true"
+          loading="lazy">
+          読み込んでいます…
+        </iframe>
+
+        <p style="text-align:center; color:var(--muted); margin:12px 0 0">
+          返信が必要な場合はメールアドレス欄をご記入ください（任意）。送信時には Google の
+          <a href="https://policies.google.com/privacy?hl=ja" target="_blank" rel="noopener">プライバシーポリシー</a>
+          が適用されます。
+        </p>
+        <p style="text-align:center; color:var(--muted); margin:8px 0 0">
+          メールでも受け付けています：
+          <!-- ▼▼▼ ここをあなたのサポート用メールに差し替えてください ▼▼▼ -->
+          <a href="mailto:your-email@example.com">your-email@example.com</a>
+          <!-- ▲▲▲ 差し替えポイント ▲▲▲ -->
+        </p>
       </section>
 
-      <p class="footer">© 2025 100pt Fighters</p>
+      <footer>
+        <div class="links" style="margin-bottom:10px">
+          <a class="pill" href="#top">⬆️ ページ上部へ</a>
+          <a class="pill" href="#ads">🔒 AdMob</a>
+          <a class="pill" href="#contact">📮 お問い合わせ</a>
+        </div>
+        <small>© 2025 100pt Fighters</small>
+      </footer>
     </main>
   </div>
+
+  <!-- スムーススクロール（小さめ） -->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        const id=a.getAttribute('href').slice(1);
+        const el=document.getElementById(id);
+        if(el){ e.preventDefault(); el.scrollIntoView({behavior:'smooth', block:'start'}); }
+      });
+    });
+  </script>
 </body>
 </html>
